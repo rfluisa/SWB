@@ -1,0 +1,41 @@
+.section-of-cards {
+  padding: 4.5rem 1rem 4.5rem 1rem;
+  text-align: center;
+
+  img {
+    position: relative;
+  }
+
+  .card {
+    border: 0.2rem solid rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0);
+  }
+
+  h4 {
+    color: $complementary-blue-4-color;
+    padding: 1.5rem;
+  }
+
+}
+
+.card-section {
+  background-color: rgba(lightgrey, 0.7);
+}
+
+
+.cell {
+  :hover {
+    .card {
+      border: 0.2rem solid $official-light-blue-color;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .section-of-cards {
+    padding: 5rem 1rem 1.5rem 1rem;
+  }
+  .cell {
+    padding-bottom: 3rem;
+  }
+}

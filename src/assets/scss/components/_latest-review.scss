@@ -1,0 +1,51 @@
+.latest-review-section {
+  background: url('../../assets/img/news.jpg') 100% no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  text-align: left;
+  display: flex;
+  position: relative;
+  z-index: 2;
+
+  .latest-review-section-text {
+    color: $base-grey-color;
+    text-shadow: 1px 1px 2px $black;
+
+    h5 {
+      padding-bottom: 1.5rem;
+    }
+
+    h2 {
+      padding: 2rem;
+      position: absolute;
+      left: 0;
+    }
+
+    .content {
+      padding: 2rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .button-test {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1rem 1rem 0rem 0rem;
+    }
+
+  }
+
+}
+.latest-review-section:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}

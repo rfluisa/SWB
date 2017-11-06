@@ -1,0 +1,33 @@
+.hero-section {
+  background: url('../../assets/img/smartglasses.jpg') 100% no-repeat;
+  background-size: cover;
+  min-height: auto;
+  padding: 3rem 2rem 5rem 2rem;
+  display: flex;
+  position: relative;
+  align-items: center;
+  z-index: 2;
+
+  h1 {
+    padding-bottom: 4.5rem;
+  }
+
+  .button-home-header {
+    padding-top: 3rem;
+  }
+
+  .hero-section-text {
+    color: $base-grey-color;
+    text-shadow: 1px 1px rgba(0,0,0,0.4);
+  }
+}
+.hero-section:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}

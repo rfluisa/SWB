@@ -1,0 +1,68 @@
+.sticky {
+  width: 100%;
+}
+
+.top-bar-container {
+  z-index: 50;
+
+  img {
+    width:15rem;
+  }
+}
+
+.top-bar {
+  box-shadow: 0rem 0.1rem 0.1rem rgba(0,0,0,0.2);
+  background-color: $base-grey-color;
+  width: 100%;
+
+  ul {
+    background-color: $base-grey-color;
+    li {
+      font-size: 1.25em;
+    }
+  }
+}
+
+$menu-hover-lines-transition: all 0.4s ease-out;
+$menu-hover-lines-border-width: 0.2rem;
+
+.menu-hover-lines {
+  transition: $menu-hover-lines-transition;
+
+  li a {
+    color: rgba($official-corporate-green-color, 0.5);
+    position: relative;
+    margin-right: 1rem;
+  }
+
+  li.active > a {
+    background-color: transparent;
+  }
+
+  a:before,
+  a::after {
+    position: absolute;
+    content: '';
+    transition: $menu-hover-lines-transition;
+    background-color: $official-corporate-green-color;
+    width: 0;
+  }
+
+  a:hover {
+    color: $official-corporate-green-color;
+    border-bottom: $menu-hover-lines-border-width solid $official-corporate-green-color;
+    transition: $menu-hover-lines-transition;
+  }
+
+  a.active {
+    color: $official-corporate-green-color;
+    border-bottom: $menu-hover-lines-border-width solid $official-corporate-green-color;
+  }
+
+  a:hover::before,
+  .active a::before,
+  a:hover::after,
+  .active a::after {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+.about-preview {
+  padding: 4rem 2rem 4rem 2rem;
+  position: relative;
+  background-color: $official-light-blue-color;
+  text-shadow: 1px 1px rgba(0,0,0,0.2);
+
+  h2 {
+    padding-right: 2rem;
+    position: absolute;
+    right: 0;
+  }
+  p {
+    padding-top: 5rem;
+  }
+
+}

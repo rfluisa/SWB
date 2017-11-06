@@ -1,0 +1,73 @@
+footer {
+
+  background-color: $base-grey-color;
+  padding: 1rem;
+  color: $complementary-blue-5-color;
+
+  /*Padding for icons from font-awesome*/
+  i {
+    padding: 0 1rem 0 1rem;
+  }
+
+  /*this is here only to align both fraunhofer numbers, without it the
+  fax number gets a little bit ahead of the phone number*/
+  .fraunhofer-phonenumber {
+    padding-left: 0.295rem;
+  }
+}
+
+/*This class is to give some space between the contents of the footer and the
+dividers*/
+.auxiliar {
+  padding-right: 1rem;
+}
+
+/*Class to create dividers between items. If screen = small, dividers on top of last two items.
+If screen = medium, dividers to the left of the last two items.*/
+.divider {
+  @include breakpoint(medium up) {
+    border-left: 1px solid rgba($complementary-green-5-color, 0.2);
+    padding-left: 1rem;
+  }
+  @include breakpoint(small only) {
+    border-top: 1px solid rgba($complementary-green-5-color, 0.2);
+    padding-top: 1rem;
+  }
+}
+
+.newsletter {
+  padding-bottom: 1.3rem;
+  //"centers" field with neighbours, viva a gambiarra!
+  @include breakpoint(medium up) {
+    padding-top: 2.5rem;
+  }
+}
+
+.copywrite {
+  font-size: 0.75em;
+  color: lightgrey;
+  justify-content: center;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: inline-flex;
+  }
+
+  li {
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding: 0 0.5rem 0 0.5rem;
+  }
+
+  li:first-child{
+    border-right: 1px solid lightgrey;
+  }
+
+  a {
+    color: lightgrey;
+  }
+
+  p {
+    padding-left: 1.2rem
+  }
+}
