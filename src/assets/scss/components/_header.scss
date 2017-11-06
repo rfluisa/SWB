@@ -8,19 +8,17 @@
   align-items: center;
   z-index: 2;
 
-  h1 {
-    padding-bottom: 4.5rem;
-  }
+  h1 {padding-bottom: 4.5rem;}
 
-  .button-home-header {
-    padding-top: 3rem;
-  }
+  .button-home-header {padding-top: 3rem;}
 
   .hero-section-text {
     color: $base-grey-color;
     text-shadow: 1px 1px rgba(0,0,0,0.4);
   }
+
 }
+
 .hero-section:after {
   content: '';
   position: absolute;

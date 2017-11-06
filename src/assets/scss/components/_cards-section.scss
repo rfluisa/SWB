@@ -2,9 +2,7 @@
   padding: 4.5rem 1rem 4.5rem 1rem;
   text-align: center;
 
-  img {
-    position: relative;
-  }
+  img {position: relative;}
 
   .card {
     border: 0.2rem solid rgba(0,0,0,0);
@@ -18,16 +16,11 @@
 
 }
 
-.card-section {
-  background-color: rgba(lightgrey, 0.7);
-}
-
+.card-section {background-color: rgba(lightgrey, 0.7);}
 
 .cell {
   :hover {
-    .card {
-      border: 0.2rem solid $official-light-blue-color;
-    }
+    .card {border: 0.2rem solid $official-light-blue-color;}
   }
 }
 
@@ -35,7 +28,5 @@
   .section-of-cards {
     padding: 5rem 1rem 1.5rem 1rem;
   }
-  .cell {
-    padding-bottom: 3rem;
-  }
+  .cell {padding-bottom: 3rem;}
 }
