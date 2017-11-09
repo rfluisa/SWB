@@ -18,6 +18,10 @@
   }
 }
 
+.top-bar .toggle-topbar.menu-icon a::after {
+  background: $official-corporate-green-color !important;
+}
+
 $menu-hover-lines-transition: all 0.4s ease-out;
 $menu-hover-lines-border-width: 0.2rem;
 

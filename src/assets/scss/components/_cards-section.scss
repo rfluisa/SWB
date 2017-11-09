@@ -18,7 +18,7 @@
 
 .card-section {background-color: rgba(lightgrey, 0.7);}
 
-.cell {
+.cell:not(.selected) {
   :hover {
     .card {border: 0.2rem solid $official-light-blue-color;}
   }
@@ -29,4 +29,8 @@
     padding: 5rem 1rem 1.5rem 1rem;
   }
   .cell {padding-bottom: 3rem;}
+}
+
+.selected {
+  .card {border: 0.2rem solid $official-dark-blue-color;}
 }

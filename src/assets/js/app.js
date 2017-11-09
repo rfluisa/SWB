@@ -20,3 +20,7 @@ $(document).ready(function() {
   }).addClass('active');
 
 });
+
+$('.selectable').click(function(){
+  $(this).toggleClass('selected');
+});

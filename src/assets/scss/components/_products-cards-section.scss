@@ -1,0 +1,42 @@
+.display-on-hover {
+    color: #FAC71D;
+}
+
+@include breakpoint(medium){
+  .display-on-hover {
+    visibility: hidden;
+    font-size: 2rem;
+  }
+}
+
+.cell {
+  :hover {
+    .display-on-hover {visibility: visible;}
+  }
+}
+
+.reveal {
+  background-color: rgba(0,0,0,0.7);
+  border: none;
+  color: $base-grey-color;
+  padding: 2rem;
+  span {
+    color: $base-grey-color;
+  }
+  i {
+    color: #FAC71D;
+    @include breakpoint(medium up){
+      font-size: 2rem;
+      padding: 1rem 0 3.5rem 0;
+    }
+  }
+  h5 {
+    padding-left: 1.5rem;
+  }
+  h3 {
+    padding-top: 3rem;
+  }
+  .indent-me {
+    padding-left: 5rem;
+  }
+}
