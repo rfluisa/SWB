@@ -2,7 +2,7 @@
     color: #FAC71D;
 }
 
-@include breakpoint(medium){
+@include breakpoint(xlarge){
   .display-on-hover {
     visibility: hidden;
     font-size: 2rem;

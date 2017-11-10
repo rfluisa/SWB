@@ -13,24 +13,26 @@
     color: $complementary-blue-4-color;
     padding: 1.5rem;
   }
+  .card-section {background-color: rgba(lightgrey, 0.7);}
 
-}
-
-.card-section {background-color: rgba(lightgrey, 0.7);}
-
-.cell:not(.selected) {
-  :hover {
-    .card {border: 0.2rem solid $official-light-blue-color;}
+  @include breakpoint(xlarge){
+    .cell:not(.selected) {
+      :hover {
+        .card {border: 0.2rem solid $official-light-blue-color;}
+      }
+    }
   }
-}
 
-@include breakpoint(small only) {
-  .section-of-cards {
-    padding: 5rem 1rem 1.5rem 1rem;
+  @include breakpoint(small only) {
+    .section-of-cards {
+      padding: 5rem 1rem 1.5rem 1rem;
+    }
+    .cell {padding-bottom: 0rem;}
   }
-  .cell {padding-bottom: 3rem;}
-}
 
-.selected {
-  .card {border: 0.2rem solid $official-dark-blue-color;}
+  .selected {
+    .card {border: 0.2rem solid $official-dark-blue-color;}
+  }
+
+
 }

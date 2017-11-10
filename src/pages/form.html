@@ -1,0 +1,68 @@
+<form>
+  <div class="grid-container">
+    <div class="grid-x grid-padding-x">
+
+      <fieldset class="fieldset small-12 large-8 cell mandatory">
+        <legend> What information would you like to input? <span>*</span></legend>
+        <input type="radio" name="option" value="Generic" id="genericOption" checked><label for="genericOption">Generic</label>
+        <input type="radio" name="option" value="Detailed" id="detailedOption"><label for="detailedOption">Detailed</label>
+      </fieldset>
+
+      <div class="small-12 large-8 cell mandatory">
+        <label> Name <span>*</span>
+          <input type="text" placeholder="e.g. Simon Nomis | Fraunhofer IPT">
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 large-12 cell mandatory">
+        <label>Process time <span>*</span></label>
+      </div>
+      <div class="small-6 large-2 cell">
+        <input type="text" placeholder="10">
+      </div>
+      <div class="small-6 large-10 cell padd-me">
+        <span>seconds</span>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell">
+        <label> Application Field
+          <select class="application-field">
+            <option value="none"> </option>
+            <option value="marketing">Marketing</option>
+            <option value="production">Production</option>
+            <option value="logistics">Logistics</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell">
+        <label> Use case
+          <select class="use-case">
+            <option value="none"> </option>
+            <option value="assist">Assist</option>
+            <option value="document">Document</option>
+            <option value="visualize">Visualize</option>
+            <option value="remote-support">Remote support</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <fieldset class="fieldset small-12 large-8 cell mandatory">
+        <legend> Type of Hardware <span>*</span></legend>
+        <input type="checkbox" id="check-smartglasses"><label for="check-smartglasses">Smartglasses</label>
+        <input type="checkbox" id="check-smartwatches"><label for="check-smartwatches">Smartwatches</label>
+        <input type="checkbox" id="check-smartphones"><label for="check-smartphones">Smartphones</label>
+        <input type="checkbox" id="check-tablets"><label for="check-tablets">Tablets</label>
+      </fieldset>
+    </div>
+
+  </div>
+</form>
