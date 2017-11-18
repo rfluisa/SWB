@@ -1,8 +1,48 @@
-.padd-me {
-  font-size: 0.9em;
-  padding-top: 0.5rem;
-}
+.idealSolution-form{
 
-.mandatory {
-  span {color: red;}
+  label {
+    color: rgba(0,0,0,0.7);
+  }
+
+  .title {
+    padding-top: 1rem;
+    font-size: 1em;
+    color: rgba(0,0,0,0.8);
+  }
+
+  .cell:not(.title):not(.padd-me span) {padding-top: 0.6rem;}
+
+  .padd-me{
+    font-size: 0.9em;
+    padding-top: 0.6rem;
+    color: rgba(0,0,0,0.5);
+  }
+
+  .mandatory {
+    span {color: red;}
+  }
+
+  .hideFields {
+    padding-top: 0.5rem;
+    display: none;
+    border-style: dashed none none none;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.2);
+    @include breakpoint(small only){margin-left: -0.5rem;}
+    @include breakpoint(medium){margin-left: -1rem;}
+  }
+
+  .fieldset {
+    @include breakpoint(small only) {margin: 0rem 0.5rem 0rem 0.5rem;}
+    @include breakpoint(medium up) {margin: 0rem 1rem 0rem 1rem;}
+    @include breakpoint(xlarge) {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .button-pad {
+    padding-top: 2rem;
+  }
+
 }

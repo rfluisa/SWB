@@ -1,0 +1,213 @@
+<form class="idealSolution-form">
+  <div class="fieldset grid-container">
+
+    <div class="grid-x grid-padding-x">
+      <fieldset class="small-12 medium-8 cell mandatory">
+        <legend class="title"> What information would you like to input? <span>*</span></legend>
+        <input type="radio" name="infoOption" value="Generic" id="genericOption" checked><label for="genericOption">Generic</label>
+        <input type="radio" name="infoOption" value="Detailed" id="detailedOption"><label for="detailedOption">Detailed</label>
+      </fieldset>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell mandatory">
+        <label class="title"> Name <span>*</span>
+          <input type="text" placeholder="e.g. Simon Nomis | Fraunhofer IPT">
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell mandatory">
+        <label class="title"> Process time <span>*</span></label>
+      </div>
+    </div>
+    <div class="grid-x grid-padding-x">
+      <div class="small-6 medium-2 cell">
+        <input type="text" placeholder="10">
+      </div>
+      <div class="small-6 medium-6 cell padd-me">
+        <span>seconds</span>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell">
+        <label class="title"> Application Field
+          <select class="application-field">
+            <option value="none"> </option>
+            <option value="marketing">Marketing</option>
+            <option value="production">Production</option>
+            <option value="logistics">Logistics</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="grid-x grid-padding-x">
+      <div class="small-12 medium-8 cell mandatory">
+        <label class="title"> Use case <span>*</span>
+          <select class="use-case">
+            <option value="none"> </option>
+            <option value="assist">Assist</option>
+            <option value="document">Document</option>
+            <option value="visualize">Visualize</option>
+            <option value="remote-support">Remote support</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div class="detailedCheck hideFields">
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-8 cell">
+          <label class="title"> Boundary Conditions
+            <select class="boundary-conditions">
+              <option value="none"> </option>
+              <option value="humidity">Humidity</option>
+              <option value="noise">Noise</option>
+              <option value="dirt">Dirt</option>
+              <option value="explosion-protected">Explosion protection</option>
+              <option value="ip-protected">IP Protection Class</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class="small-11 medium-8 cell">
+          <legend class="title"> Input Data </legend>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-text"><label for="check-text">Text</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-video"><label for="check-video">Video</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-image"><label for="check-image">Image</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-voice"><label for="check-voice">Voice</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-8 cell">
+          <label class="title">Mean air temperature</label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 medium-2 cell">
+          <input type="text" placeholder="25">
+        </div>
+        <div class="small-6 medium-6 cell padd-me">
+          <span>ºC</span>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-8 cell">
+          <label class="title">Mean environmnet air humidity</label>
+        </div>
+      </div>
+      <div class="grid-x grid-padding-x">
+        <div class="small-6 medium-2 cell">
+          <input type="text" placeholder="65">
+        </div>
+        <div class="small-6 medium-6 cell padd-me">
+          <span>%</span>
+        </div>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class="small-12 medium-8 cell">
+          <legend class="title"> Process visibility conditions </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="visibilityOption" value="Limited" id="limitedOption" checked><label for="limitedOption">Limited</label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="visibilityOption" value="Clear" id="clearOption"><label for="clearOption">Clear</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Automation level </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="automationOption" value="Manual" id="manualOption" checked><label for="manualOption">Manual</label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="automationOption" value="Automated" id="automatedOption"><label for="automatedOption">Automated</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-12 cell">
+          <legend class="title"> Context Technologies </legend>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-2dCode"><label for="check-2dCode">2D Codes (QR-Code, Barcode, etc)</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-rfid"><label for="check-rfid">RFID</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-nfc"><label for="check-nfc">NFC</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-opcClassic"><label for="check-opcClassic">OPC Classic</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-opcua"><label for="check-opcua">OPCUA</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-mtConnect"><label for="check-mtConnect">MTConnect</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Degree of information required </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="degreeInfoOption" value="Low" id="lowOption" checked><label for="lowOption">Low</label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="degreeInfoOption" value="High" id="highOption"><label for="highOption">High</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Price </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="priceOption" value="Cheap" id="cheapOption" checked><label for="cheapOption">< $1000 </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="priceOption" value="Regular" id="regularOption"><label for="regularOption">< $3000 </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="priceOption" value="Expensive" id="expensiveOption"><label for="expensiveOption">> $3000 </label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Display Technologies </legend>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-staticInfo"><label for="check-staticInfo">Static Information</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-ar"><label for="check-ar">Augmented Reality (AR)</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-vr"><label for="check-vr">Virtual Reality (VR)</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-mr"><label for="check-mr">Mixed Reality (MR)</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Minimum Battery Runtime (Battery life) </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="weakOption" value="Weak" id="weakBatteryOption" checked><label for="weakBatteryOption">< 1h </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="neutralOption" value="Neutral" id="neutralBatteryOption"><label for="neutralBatteryOption">< 4h </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="strongOption" value="Strong" id="strongBatteryOption"><label for="strongBatteryOption"> <= 8h </label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Control Options </legend>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-touch"><label for="check-touch">Touch control</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-speech"><label for="check-speech">Speech Control</label></span>
+          <span style="white-space: nowrap;"><input type="checkbox" id="check-gesture"><label for="check-gesture">Gesture Control</label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Weight </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="weightOption" value="Light" id="lightOption" checked><label for="cheapOption">< 200g </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="weightOption" value="Neutral" id="neutralOption"><label for="neutralOption">< 500g </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="weightOption" value="Heavy" id="heavyOption"><label for="heavyOption">> 500g </label></span>
+        </fieldset>
+      </div>
+
+      <div class="grid-x grid-padding-x">
+        <fieldset class=" small-12 medium-8 cell">
+          <legend class="title"> Sensor quality </legend>
+          <span style="white-space: nowrap;"><input type="radio" name="sensorQualityOption" value="Normal" id="normalSensorOption" checked><label for="normalSensorOption">Normal </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="sensorQualityOption" value="Good" id="goodSensorOption"><label for="goodSensorOption">Good </label></span>
+          <span style="white-space: nowrap;"><input type="radio" name="sensorQualityOption" value="VeryGood" id="veryGoodSensorOption"><label for="veryGoodSensorOption">Very Good </label></span>
+        </fieldset>
+      </div>
+
+
+    </div>
+    <div class="small-1 text-right button-pad">
+      <button class="hollow button" href="#">Submit</button>
+    </div>
+  </div>
+</form>

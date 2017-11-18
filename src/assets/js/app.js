@@ -18,9 +18,21 @@ $(document).ready(function() {
   $('ul.menu a').filter(function() {
     return this.href == url;
   }).addClass('active');
-
 });
 
-$('.selectable').click(function(){
+/*$('.selectable button').click(function(e) {
+  e.stopPropagation();
+  e.load("#spec-sheet");
+});*/
+
+$('.selectable').click(function() {
   $(this).toggleClass('selected');
+});
+
+$('.fieldset').click(function() {
+  if($("input[name=infoOption][value=Detailed]").is(":checked")) {
+    $('.detailedCheck').fadeIn();
+  } else {
+    $('.detailedCheck').fadeOut();
+  }
 });

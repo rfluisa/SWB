@@ -35,6 +35,10 @@ If screen = medium, dividers to the left of the last two items.*/
   @include breakpoint(medium up) {
     padding-top: 2.5rem;
   }
+
+  .input-group {
+    display: inline;
+  }
 }
 
 .copywrite {

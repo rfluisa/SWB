@@ -15,6 +15,10 @@
   }
   .card-section {background-color: rgba(lightgrey, 0.7);}
 
+  .selected {
+    .card {border: 0.2rem solid $official-dark-blue-color;}
+  }
+
   @include breakpoint(xlarge){
     .cell:not(.selected) {
       :hover {
@@ -29,10 +33,4 @@
     }
     .cell {padding-bottom: 0rem;}
   }
-
-  .selected {
-    .card {border: 0.2rem solid $official-dark-blue-color;}
-  }
-
-
 }
